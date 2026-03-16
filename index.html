@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack Developer portfolio - Features HTML5, CSS3, JavaScript, Java, PHP, MongoDB, Oracle. View my projects and skills.">
+    <meta name="keywords" content="Full Stack Developer, Web Development, Portfolio, HTML, CSS, JavaScript, Java, PHP, MongoDB, Oracle">
+    <meta name="author" content="Tusara Kanta Senapati">
+    <meta property="og:title" content="Tusara Kanta Senapati - Full Stack Developer">
+    <meta property="og:description" content="Explore my full-stack development projects and technical skills">
+    <meta property="og:type" content="website">
+    <title>Tusara Kanta Senapati - Full Stack Developer</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Dynamic Background Canvas -->
+    <canvas id="bg3dCanvas"></canvas>
+    <div id="particlesOverlay"></div>
+    <div id="pageWrapper" class="preload">
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo-section">
+                <img src="../1763569661302.jpg" alt="Tusara Kanta Senapati" class="nav-profile-pic">
+                <a href="#home" class="logo">TKS</a>
+                <span class="signature">Tusara Kanta Senapati</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Profile Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <img src="../1763569661302.jpg" alt="Tusara Kanta Senapati" class="modal-image">
+                <div class="contact-details">
+                    <h2>Tusara Kanta Senapati</h2>
+                    <p class="profession">Full Stack Developer | Student</p>
+                    
+                    <div class="contact-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Odisha, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:tusarakanta@example.com">tusarakanta@example.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="icon">📱</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+918328826952">+91-8328826952</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="icon">🔗</span>
+                        <div>
+                            <h4>Social Links</h4>
+                            <p>
+                                <a href="https://github.com" target="_blank" class="social-link">GitHub</a> | 
+                                <a href="https://linkedin.com" target="_blank" class="social-link">LinkedIn</a> | 
+                                <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="profession-badge">Student Developer</span>
+                    <h1>Hi, I'm <span>Tusara Kanta Senapati</span></h1>
+                    <p>Full-Stack Developer | Passion for Web Development</p>
+                    <p style="font-size: 1rem; opacity: 0.85; line-height: 1.7;">I'm a dedicated developer from Odisha, building innovative software solutions with clean code and creative design. Let's create something amazing together!</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="cta-button primary">View My Projects</a>
+                        <a href="#contact" class="cta-button secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../1763569661302.jpg" alt="Tusara Kanta Senapati">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Get To Know Me</div>
+                <h2>About Me</h2>
+                <p>Passionate developer from Odisha, dedicated to creating beautiful and functional web applications</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>My Background</h3>
+                    <p>I'm a driven full-stack developer currently pursuing my BCA degree from MPC Autonomous College. My journey in tech started with learning C and C++, which gave me a solid foundation in programming fundamentals and problem-solving skills.</p>
+                    
+                    <div class="info-card">
+                        <strong>📍 From Odisha, India</strong>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.95rem;">Based in a vibrant tech community with a passion for innovation</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <strong>🎓 Education Path</strong>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.95rem;">Completed 12th from OAV | Currently pursuing BCA from MPC Autonomous College</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>My Vision</h3>
+                    <p>My dream is to design and develop my own innovative software that solves real-world problems. I'm passionate about web development and constantly learning new technologies to stay ahead in this rapidly evolving field.</p>
+                    
+                    <div class="info-card">
+                        <strong>🚀 My Goal</strong>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.95rem;">Create impactful software solutions with elegant code and exceptional user experiences</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <strong>💡 Philosophy</strong>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.95rem;">Every project is an opportunity to learn, innovate, and make a positive impact</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">What I Can Do</div>
+                <h2>Technical Skills</h2>
+                <p>Expertise in multiple programming languages and technologies for full-stack development</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-card-icon">🔤</div>
+                    <h3>C & C++</h3>
+                    <p>Strong foundation in programming fundamentals, data structures, and algorithms</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon">☕</div>
+                    <h3>Java</h3>
+                    <p>Object-oriented programming for building scalable and robust applications</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon">🌐</div>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Semantic markup and responsive design for modern web interfaces</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon">💾</div>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL database design and management for flexible data solutions</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon">🔧</div>
+                    <h3>PHP</h3>
+                    <p>Server-side scripting for dynamic web applications and backend development</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon">🗄️</div>
+                    <h3>Oracle</h3>
+                    <p>Relational database management and SQL query optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">My Work</div>
+                <h2>Featured Projects</h2>
+                <p>Showcase of my best projects demonstrating full-stack development capabilities</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🌍 Traveling Hub</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>A comprehensive travel planning platform helping users discover destinations, book accommodations, and plan itineraries. Connect with fellow travelers and share unforgettable experiences.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <a href="../travel-website/" class="project-link" target="_blank">📂 View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🚌 Public Transport</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>An intelligent public transportation system enabling users to track buses, find optimal routes, and plan commutes efficiently. Real-time updates with an intuitive, user-friendly interface.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <a href="../public-transport/" class="project-link" target="_blank">📂 View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>� College Portal</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>A comprehensive college management platform where students can view courses, manage registrations, access academic resources, and connect with peers and faculty for enhanced learning.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Oracle</span>
+                        </div>
+                        <a href="../college-portal/" class="project-link" target="_blank">📂 View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Get In Touch</div>
+                <h2>Let's Connect</h2>
+                <p>Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-item-icon">📧</div>
+                    <h3>Email Me</h3>
+                    <a href="mailto:tsenapati0908@gmail.com">tsenapati0908@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">📱</div>
+                    <h3>Call Me</h3>
+                    <a href="tel:+918328826952">+91-8328826952</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">📍</div>
+                    <h3>Visit Me</h3>
+                    <p>Odisha, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Tusara Kanta Senapati. All rights reserved. | <span style="color: #e94560;">❤</span> Built with passion for innovation</p>
+        </div>
+    </footer>
+
+    </div>
+    <script>
+        // Floating Particles Overlay Effect
+        const overlay = document.getElementById('particlesOverlay');
+        if (overlay) {
+            overlay.style.position = 'fixed';
+            overlay.style.top = '0';
+            overlay.style.left = '0';
+            overlay.style.width = '100vw';
+            overlay.style.height = '100vh';
+            overlay.style.zIndex = '1';
+            overlay.style.pointerEvents = 'none';
+            overlay.style.overflow = 'hidden';
+            for (let i = 0; i < 18; i++) {
+                const dot = document.createElement('div');
+                dot.style.position = 'absolute';
+                dot.style.width = '14px';
+                dot.style.height = '14px';
+                dot.style.borderRadius = '50%';
+                dot.style.background = 'linear-gradient(135deg,#e94560,#0f3460)';
+                dot.style.opacity = '0.18';
+                dot.style.left = Math.random()*100+'vw';
+                dot.style.top = Math.random()*100+'vh';
+                dot.style.filter = 'blur(2px)';
+                dot.style.animation = `floatDot 6s ease-in-out ${Math.random()*3}s infinite`;
+                overlay.appendChild(dot);
+            }
+        }
+        // Floating dot animation
+        const styleSheet = document.createElement('style');
+        styleSheet.innerHTML = `@keyframes floatDot { 0% { transform: translateY(0); } 50% { transform: translateY(-30px); } 100% { transform: translateY(0); } }`;
+        document.head.appendChild(styleSheet);
+        // 3D Dynamic Background Animation
+        const canvas = document.getElementById('bg3dCanvas');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+            canvas.style.position = 'fixed';
+            canvas.style.top = '0';
+            canvas.style.left = '0';
+            canvas.style.width = '100vw';
+            canvas.style.height = '100vh';
+            canvas.style.zIndex = '0';
+            canvas.style.pointerEvents = 'none';
+
+            // 3D floating particles
+            const particles = [];
+            const particleCount = 60;
+            for (let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    z: Math.random() * 400 + 100,
+                    vx: (Math.random() - 0.5) * 0.8,
+                    vy: (Math.random() - 0.5) * 0.8,
+                    vz: (Math.random() - 0.5) * 0.3,
+                    color: `rgba(${200+Math.floor(Math.random()*55)},${50+Math.floor(Math.random()*100)},${96+Math.floor(Math.random()*160)},0.7)`
+                });
+            }
+
+            function drawParticle(p) {
+                // Perspective projection
+                const fov = 400;
+                const scale = fov / (fov + p.z);
+                const px = p.x * scale + width/2 * (1-scale);
+                const py = p.y * scale + height/2 * (1-scale);
+                ctx.beginPath();
+                ctx.arc(px, py, 18 * scale, 0, 2 * Math.PI);
+                ctx.fillStyle = p.color;
+                ctx.shadowColor = p.color;
+                ctx.shadowBlur = 18 * scale;
+                ctx.fill();
+                ctx.shadowBlur = 0;
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, width, height);
+                for (let p of particles) {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.z += p.vz;
+                    if (p.x < 0 || p.x > width) p.vx *= -1;
+                    if (p.y < 0 || p.y > height) p.vy *= -1;
+                    if (p.z < 100 || p.z > 500) p.vz *= -1;
+                    drawParticle(p);
+                }
+                requestAnimationFrame(animate);
+            }
+            animate();
+
+            window.addEventListener('resize', () => {
+                width = window.innerWidth;
+                height = window.innerHeight;
+                canvas.width = width;
+                canvas.height = height;
+            });
+        }
+        // Page load animation
+        window.addEventListener('load', function() {
+            const wrapper = document.getElementById('pageWrapper');
+            if (wrapper) {
+                wrapper.classList.remove('preload');
+                wrapper.classList.add('loaded');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+
+            // Close menu when a link is clicked
+            document.querySelectorAll('#navMenu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                });
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.style.animation = 'slideInUp 0.6s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.skill-card, .project-card, .info-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Profile Modal Functionality
+        const profileModal = document.getElementById('profileModal');
+        const navProfilePic = document.querySelector('.nav-profile-pic');
+        const closeBtn = document.querySelector('.close-btn');
+
+        if (navProfilePic && profileModal) {
+            // Open modal when clicking profile picture
+            navProfilePic.addEventListener('click', (e) => {
+                e.preventDefault();
+                profileModal.classList.add('active');
+                // Ensure modal is visible and body scroll is disabled
+                profileModal.style.display = 'flex';
+                toggleBodyScroll(true);
+            });
+        }
+
+        if (closeBtn) {
+            // Close modal when clicking close button
+            closeBtn.addEventListener('click', () => {
+                profileModal.classList.remove('active');
+                profileModal.style.display = 'none';
+                toggleBodyScroll(false);
+            });
+        }
+
+        if (profileModal) {
+            // Close modal when clicking outside the modal content
+            profileModal.addEventListener('click', (e) => {
+                if (e.target === profileModal) {
+                    profileModal.classList.remove('active');
+                    profileModal.style.display = 'none';
+                    toggleBodyScroll(false);
+                }
+            });
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && profileModal) {
+                profileModal.classList.remove('active');
+                profileModal.style.display = 'none';
+                toggleBodyScroll(false);
+            }
+        });
+
+        // Prevent body scroll when modal is open
+        function toggleBodyScroll(disable) {
+            if (disable) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        if (profileModal) {
+            const observer = new MutationObserver(() => {
+                if (profileModal.classList.contains('active')) {
+                    toggleBodyScroll(true);
+                } else {
+                    toggleBodyScroll(false);
+                }
+            });
+
+            observer.observe(profileModal, { attributes: true, attributeFilter: ['class'] });
+        }
+
+        // Performance optimization: Lazy loading for images
+        document.querySelectorAll('img').forEach(img => {
+            img.loading = 'lazy';
+        });
+
+        // Analytics placeholder (add your tracking code here)
+        // Example: Google Analytics, Hotjar, or other analytics service
+    </script>
+</body>
+</html>
